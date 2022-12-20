@@ -10,7 +10,7 @@ Please feel free to add to the project by developing more high level functions.
 
 ### Rapido
 
-Rapido is based in New Zealand that provides integration support for the Accredo ERP system. We can help you with the following:
+Rapido is based in New Zealand and provides integration support for the Accredo ERP system. We can help you with the following:
 
 - Integrations to other platforms and systems
   - eCommerce
