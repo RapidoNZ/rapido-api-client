@@ -77,7 +77,7 @@ Authentication is handled by the module. The token is automatically refreshed wh
 
 #### Accredo configuration
 
-To be able to connect to your system you will a config file in the root of your app called `accredoConfig.json`. If this is not possible, you can pass this information in an environment variable called `ACCREDO_CONFIG` as a `JSON` string.
+To be able to connect to your system you will need a config file in the root of your app called `accredoConfig.json`. If this is not possible, you can pass this information in an environment variable called `ACCREDO_CONFIG` as a `JSON` string.
 
 This file contains the following information:
 
