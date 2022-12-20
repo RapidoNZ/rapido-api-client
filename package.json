@@ -1,0 +1,36 @@
+{
+  "name": "@rapidonz/rapido-api-client",
+  "version": "0.0.27",
+  "description": "Unofficial Accredo Web SDK",
+  "author": "RapidoNZ<adam@rapido.co.nz>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RapidoNZ/rapido-api-client.git"
+  },
+  "keywords": [
+    "axios",
+    "accredo",
+    "erp",
+    "typescript",
+    "rapido",
+    "rapido-api-client"
+  ],
+  "homepage": "www.rapido.co.nz",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build-esm": "tsc -p tsconfig.esm.json",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "typescript": "^4.0"
+  }
+}
