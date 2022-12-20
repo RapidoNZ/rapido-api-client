@@ -8,38 +8,23 @@ If you find any bugs or have any suggestions please create an issue on the GitHu
 
 Please feel free to add to the project by developing more high level functions.
 
+### Demo
+
+https://user-images.githubusercontent.com/9592417/207971042-91055e05-d49f-4c8c-8418-574dd0120e74.mp4
+
 ### Rapido
 
 Rapido is based in New Zealand and provides integration support for the Accredo ERP system. We can help you with the following:
 
 - Integrations to other platforms and systems
-  - eCommerce
-  - CRM
-  - Logistics/3PL
-  - SaaS Tools (e.g Airtable, Google Sheets, etc.)
 - Custom development based on the Web API
-  - Building in house applications
-- B2B portal development for your customers
-  - Self-service
-  - Ordering
-  - Invoicing
-  - Balances
-  - Reporting
-  - Document management
-  - PDF/Excel order entry
+- B2B portals
 - B2C Shopify integrations
   - Full integration. Orders, products, inventory etc.
 - Data collection
-  - Web scraping
-  - API integrations
-- Scheduled tasks
-  - Automating processes
+- Automating processes
 
 If you would like to know more about what we do, please visit our website at [rapido.co.nz](https://rapido.co.nz) or get in touch with [Adam Holt](mailto:mail@adamholt.co.nz).
-
-### Demo
-
-https://user-images.githubusercontent.com/9592417/207971042-91055e05-d49f-4c8c-8418-574dd0120e74.mp4
 
 ### Requirements
 
