@@ -236,11 +236,9 @@ async function runScript() {
 
 For more advanced usage you can use the underlying odata4 services. These services are generated from the Accredo Web API. You can find the services in the `src/apis` folder.
 
-`🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨`
+`🚨🚨🚨`
 
-`If you're needing to implement these services directly, please reach out to us as it would be great to add the functionality to the high level functions.`
-
-`🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨`
+If you're needing to implement these services directly, please reach out to us as it would be great to add the functionality to the high level functions.
 
 `Request`
 
