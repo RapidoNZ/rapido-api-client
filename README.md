@@ -268,11 +268,8 @@ async function getCustomers() {
   const { data } = await ArCustomerApi.aRCustomerGet({
     // Odata4 parameters are passed as params
     params: {
-      $filter: "Category1 eq 'SILVER'",
       $select: "CustomerCode,CustomerName,CreatedDate",
       $expand: "Contact($select=FullName,Role)",
-      $orderby: "CustomerCode",
-      $top: 5,
     },
   });
 }
@@ -281,42 +278,46 @@ async function getCustomers() {
 `Result`
 
 ```json
-[
-  {
-    "@odata.etag": "9/88",
-    "CustomerCode": "ASHENG",
-    "CustomerName": "Ash Engineering Ltd",
-    "CreatedDate": "2022-08-22",
-    "Contact@odata.context": "https://accredo-api.rapido.co.nz/saturn/odata4/v1/Company('demo')/$metadata#ARCustomer('ASHENG')/Contact",
-    "Contact": [
-      {
-        "FullName": "Donna",
-        "Role": "Accounts"
-      },
-      {
-        "FullName": "Eric",
-        "Role": "Purchasing"
-      }
-    ]
-  },
-  {
-    "@odata.etag": "2/61",
-    "CustomerCode": "BOWEN",
-    "CustomerName": "Bowen Paint & Paper Ltd",
-    "CreatedDate": "2022-08-22",
-    "Contact@odata.context": "https://accredo-api.rapido.co.nz/saturn/odata4/v1/Company('demo')/$metadata#ARCustomer('BOWEN')/Contact",
-    "Contact": [
-      {
-        "FullName": "Peter Bowen",
-        "Role": "Financial Controller"
-      },
-      {
-        "FullName": "Mike Bowen",
-        "Role": "Sales"
-      }
-    ]
-  }
-]
+{
+  "@odata.context": "https://accredo-api.rapido.co.nz/saturn/odata4/v1/Company('demo')/$metadata#ARCustomer",
+  "@odata.nextLink": "https://accredo-api.rapido.co.nz/saturn/odata4/v1/Company('demo')/ARCustomer?$expand=Contact($select=FullName,Role)&$select=CustomerCode,CustomerName,CreatedDate&$skiptoken=BOWEN",
+  "value": [
+    {
+      "@odata.etag": "9/88",
+      "CustomerCode": "ASHENG",
+      "CustomerName": "Ash Engineering Ltd",
+      "CreatedDate": "2022-08-22",
+      "Contact@odata.context": "https://accredo-api.rapido.co.nz/saturn/odata4/v1/Company('demo')/$metadata#ARCustomer('ASHENG')/Contact",
+      "Contact": [
+        {
+          "FullName": "Donna",
+          "Role": "Accounts"
+        },
+        {
+          "FullName": "Eric",
+          "Role": "Purchasing"
+        }
+      ]
+    },
+    {
+      "@odata.etag": "2/61",
+      "CustomerCode": "BOWEN",
+      "CustomerName": "Bowen Paint & Paper Ltd",
+      "CreatedDate": "2022-08-22",
+      "Contact@odata.context": "https://accredo-api.rapido.co.nz/saturn/odata4/v1/Company('demo')/$metadata#ARCustomer('BOWEN')/Contact",
+      "Contact": [
+        {
+          "FullName": "Peter Bowen",
+          "Role": "Financial Controller"
+        },
+        {
+          "FullName": "Mike Bowen",
+          "Role": "Sales"
+        }
+      ]
+    }
+  ]
+}
 ```
 
 #### Create an entity
